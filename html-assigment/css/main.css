@@ -1,0 +1,32 @@
+body {
+    font-family: arial;
+    font-size: 18;
+}
+
+header, footer {
+    background-color: rgb(139, 63, 63);
+}
+.site-title {
+    color: aliceblue;
+}
+#my-image {
+    box-shadow: 2px 1px black;
+}
+
+.list-style-type {
+    list-style-type: square;
+}
+
+li:nth-child(odd) {
+    background-color: beige;
+}
+
+a:link {
+    background: fixed rgb(224, 208, 202);
+    border-style: solid;
+    text-decoration: none;
+}
+
+a:hover {
+    color:aliceblue;
+}
