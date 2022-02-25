@@ -1,0 +1,80 @@
+
+html {
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+body {
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: azure;
+}
+
+/* Positioning of the header */
+
+.header-image {
+   position: relative; 
+   max-width: 100%; 
+}
+
+.lone-starfish-header {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    color: white;
+    font-size: 20px;
+    font-weight: ;
+}
+
+/* Styling of the navegation */
+
+nav {
+    padding: 30 px;
+}
+
+nav ul {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+nav li {
+    width: 30%;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+nav li {
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+/* Styling of the article */
+
+article {
+    margin: 2%;
+}
+
+article h2 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+article p {
+    font-size: 12px;
+    line-height: 1.5em;
+    
+}
+.article-image {
+    max-width: 30%;
+}
+
+body section {
+    margin: 2%;
+    font-size: 12px;
+    line-height: 1.5em;
+}
