@@ -29,13 +29,13 @@ body {
     top: 10%;
     color: white;
     font-size: 20px;
-    font-weight: ;
+    font-weight: lighter;
 }
 
 /* Styling of the navegation */
 
 nav {
-    padding: 30 px;
+    padding: 30px;
 }
 
 nav ul {
