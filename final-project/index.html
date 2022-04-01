@@ -5,33 +5,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - Polo0016</title>
-    <link href="css/styles.css" rel="stylesheet>"
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <!---Creating a separete box for navegation-->
+        <!---Creating a conatiner for navegation-->
+        <div class="menu">
+
+            <nav class="menu-bar">
+
+                <!---Logo section in container-->
+                <div class="start-logo">
+                    <img src="images/logo.png" alt="three start media logo"/>
+
+                </div>
+
+                <!---Container to style menu + id for navegation -->
+                <div >
+                    <ul class="menu-block">
+
+                        <li id="home"><a href="#">Home</a></li>
+                        <li id="about"><a href="#about-section">About Us</a></li>
+                        <li id="services"><a href="#services-section">Services</a></li>
+                        <li id="team"><a href="#team-section">Team</a></li>
+                        <li id="contact"><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </div> 
+                <!---Creating a c0ntainer for search box with botton-->
+                <div>
+                    <ul>
+                        <li> 
+                            <form class="search-box" method="post" >
+                              <input type="text" placeholder="Search" name="search"> 
+                              <button type="submit" name="search"><i class=" icon-zoom"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>   
+            </nav>   
+        </div>
+
+        <!---Creating a conatiner for the Banner-->
+        <div class="wrapper banner-box">
+
+             <!-- Background image for banner -->
+             <img src="images/main-banner.jpg" alt="picture of our office" class="main-banner">
+
+            <div class="welcome-text">
+
+             <h1>Welcome to Three Star Media</h1>
+
+             <p class="welcome-p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!</p>
+            </div>
+
+         <!-- Create Conecct with us botton-->    
+              
+            <button class="banner-botton"> Connect with us
+                <i class="botton-arrow"></i>
+            </button> 
+        </div>
+        
     </header>
 
     <main>
+
         <!---About us section-->
 
-        <section class="wrapper about-us"></section>
+        <div id="about-section" class="wrapper about-us">
+            <!---Grid section for image -->
+            <div>
+                <img src="images/about-us.jpg" alt="tennis table" class="about-image">
+            </div>
+            <!---Grid section for text -->
+            <div class="about-text-section">
+
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                </p>
+            </div>    
+
+        </div>
 
         <!---Our Services section-->
 
-        <section class="wrapper services"></section>
+        <div id="services-section" class="wrapper services">
+
+            <h2>Our Services</h2>
+
+            <!---Grid section for Digital Transformation -->
+
+            <div class="services-grid-1">
+
+                <img src="images/digital.jpg" alt="men with computer and phone" class="grid-pictures">
+
+                <div class="digital-box">
+
+                    <h3>Digital Transformation</h3>
+
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                    </p>
+
+                    <button class="grid-botton"> Digital Plans
+                        <i class="botton-arrow"></i>
+                    </button>
+                </div>    
+            </div>
+
+            <!---Grid section for Marketing -->
+
+            <div class="services-grid-2">
+
+                <img src="images/marketing.jpg" alt="computer" class="grid-pictures">
+
+                <div class="marketing-box">
+
+                    <h3>Marketing</h3>
+
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                    </p>
+
+                    <button class="grid-botton"> Marketing Plans
+                        <i class="botton-arrow"></i>
+                    </button>
+                </div>    
+            </div>
+
+            <!---Grid section for Video Production -->
+
+            <div class="services-grid-3">
+
+                <img src="images/video.jpg" alt="phone with youtube logo" class="grid-pictures">
+
+                <div class="video-box">
+
+                    <h3>Video Production</h3>
+
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                    </p>
+
+                    <button class="grid-botton"> Video Plans
+                        <i class="botton-arrow"></i>
+                    </button>
+                </div>    
+            </div>
+
+            <!---Grid section for Web Development -->
+
+            <div class="services-grid-4">
+
+                <img src="images/web.jpg" alt="phone with pen and paper" class="grid-pictures">
+
+                <div class="web-box">
+
+                    <h3>Web Development</h3>
+
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                    </p>
+
+                    <button class="grid-botton"> Web Plans
+                        <i class="botton-arrow"></i>
+                    </button>
+                </div>    
+            </div>
+
+            <!---Grid section for Print -->
+
+            <div class="services-grid-5">
+
+                <img src="images/print.jpg" alt="boxes with news letters" class="grid-pictures">
+
+                <div class="web-box">
+
+                    <h3>Print</h3>
+
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                    </p>
+
+                    <button class="grid-botton"> Print Plans
+                        <i class="botton-arrow"></i>
+                    </button>
+                </div>    
+            </div>
+        </div>
 
         <!---Our Vision section-->
-
-        <section class="wrapper vision"></section>
+        <div class="wrapper vision"></div>
 
         <!---Our Team section-->
-
-        <section class="wrapper our-team"></section>
+        <div id="team-section" class="wrapper our-team"></div>
 
         <!---Contact Us section-->
-
-        <section class="wrapper contact-us"></section>
+        <div id="contact-section" class="wrapper contact-us"></div>
     </main>
 
     <footer>
@@ -44,7 +213,6 @@
             <p class="footer-font">
                 All images are taken from <a href="https://unsplash.com">Unsplash</a>
             </p>
-
         </div>  
     </footer>
     
