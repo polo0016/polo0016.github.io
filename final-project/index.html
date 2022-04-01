@@ -61,7 +61,7 @@
 
          <!-- Create Conecct with us botton-->    
               
-            <p><input class="botton-arrow" type="submit" name="connect-botton" id="connect-botton" value="Connect with us &#9654;"></p>
+            <p><input class="botton-arrow" type="submit" name="connect-botton" id="connect-botton"  href="#contact-section" value="Connect with us &#9654;"></p>
         </div>
         
     </header>
@@ -218,7 +218,7 @@
               
                 <div class="grid-1-text">
 
-                    <h3 class="our-team-h3">John Doe</h3>
+                    <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <hr class="team-line">
 
@@ -237,7 +237,7 @@
               
                 <div class="grid-2-text">
 
-                    <h3 class="our-team-h3">Bob Rite</h3>
+                    <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <hr class="team-line">
 
@@ -250,7 +250,66 @@
         </div>
 
         <!---Contact Us section-->
-        <div id="contact-section" class="wrapper contact-us"></div>
+        <div id="contact-section" class="wrapper contact-us">
+
+            <h2> Contact Us</h2>
+
+            <!---Creating grid for the send us form-->
+            <div class="contact-form-grid">
+
+                <form action="send" method="post">
+                    
+                    <h3>Send us a message</h3>
+                    
+                    <!-- Send us a message form -->
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" name="username">
+        
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" style="height:200px"></textarea>  
+                    
+                    <!--submit button -->
+                    <input class="sendbutton" type="submit" name="submit" id="submit" value="Send">
+                </form>
+                
+            </div>
+
+            <!---Creating grid for the location-->
+
+            <div class="location-grid">
+
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641058634!2d-74.2478914182535!3d4.648283717813949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Bogota%2C%20Colombia!5e0!3m2!1sen!2sca!4v1648842162915!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            </div>
+
+            <!---Creating grid for the hoursn-->
+
+            <div class="hours-grid">
+
+                <h3>Hours of operation</h3>
+                
+                <table>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+        
+            </div>
+
+        </div>
     </main>
 
     <footer>
