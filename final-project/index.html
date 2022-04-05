@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <!---Creating a conatiner for navegation-->
         <div class="menu">
@@ -20,12 +21,12 @@
                     <img src="images/logo.png" alt="three start media logo"/>
 
                 </div>
-
                 <!---Container to style menu + id for navegation -->
                 <div >
                     <ul class="menu-block">
 
-                        <li id="home"><a href="#">Home</a></li>
+                        <!--- Giving a class to home to style in css and href to link the nav to diferrent sections -->
+                        <li class="yellow-top"><a href="#">Home</a></li>
                         <li id="about"><a href="#about-section">About Us</a></li>
                         <li id="services"><a href="#services-section">Services</a></li>
                         <li id="team"><a href="#team-section">Team</a></li>
@@ -38,6 +39,7 @@
                         <li> 
                             <form class="search-box" method="post" >
                               <input type="text" placeholder="Search" name="search"> 
+                              <!--- Adding the arrow directly in the link as an icon -->
                               <button type="submit" name="search"><i class=" icon-zoom"></i></button>
                             </form>
                         </li>
@@ -47,7 +49,7 @@
         </div>
 
         <!---Creating a conatiner for the Banner-->
-        <div class="wrapper banner-box">
+        <div class="banner-box">
 
              <!-- Background image for banner -->
              <img src="images/main-banner.jpg" alt="picture of our office" class="main-banner">
@@ -68,14 +70,14 @@
 
     <main>
 
-        <!---About us section-->
+        <!---About us section / creating 3 diferent div: one the parent and wo childs to use flex on css / class of wrapper for bleed-->
 
         <div id="about-section" class="wrapper about-us">
-            <!---Grid section for image -->
+            <!---section for image -->
             <div>
                 <img src="images/about-us.jpg" alt="tennis table" class="about-image">
             </div>
-            <!---Grid section for text -->
+            <!---section for text -->
             <div class="about-text-section">
 
                 <h2>About Us</h2>
@@ -89,11 +91,13 @@
 
         </div>
 
-        <!---Our Services section-->
+        <!---Our Services section/ creating diferent div for each section to use grid on css-->
 
-        <div id="services-section" class="wrapper services">
+        <section class="services">
 
-            <h2>Our Services</h2>
+            <div class="services-grid-title">
+                <h2>Our Services</h2>
+            </div>
 
             <!---Grid section for Digital Transformation -->
 
@@ -178,9 +182,9 @@
                     <p><input class="botton-arrow" type="submit" name="print-botton" id="print-botton" value="Print Plans &#9654;"></p>
                 </div>    
             </div>
-        </div>
+        </section>
 
-        <!---Our Vision section-->
+        <!---Our Vision section/ two div for parent and child element / class of wrapper for bleed-->
 
         <div class="wrapper vision">
 
@@ -206,7 +210,7 @@
 
         <!---Our Team section-->
 
-        <div id="team-section" class="wrapper our-team">
+        <section class="our-team">
             
             <h2> Our Team</h2>
             
@@ -247,10 +251,10 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!---Contact Us section-->
-        <div id="contact-section" class="wrapper contact-us">
+        <div id="contact-section" class="contact-us">
 
             <h2> Contact Us</h2>
 
