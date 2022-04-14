@@ -1,4 +1,294 @@
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em,  ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Mobile Style */
+
+/* Font and sizes for the whole page*/
+
+html{
+	font-size: 16px;
+	font-family:'Open Sans', sans-serif;
+
+}
+h1 {
+	font-size: 5rem;
+	font-weight: bolder;
+	padding: 8px 0;
+	color: white;
+	padding-top: 50px;
+	line-height: 1.5;
+}
+
+h2{ 
+	font-weight: bold;
+	font-size: 3rem;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+h3{
+	font-weight: bolder;
+	font-size: 2rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-weight: bolder;
+	border-bottom: 2px solid #c78c06;
+	margin-bottom: 10px;
+}
+
+p {
+	padding-bottom: 15px;
+	margin-left: 5px;
+	line-height: 1.3;
+}
+
+/* Setting the width for the page*/
+body {
+  min-width: 760px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  align-items: center; 
+}
+.main {
+    width: 760px;
+    align-items: center;
+}
+
+/* Styling the navegation */
+
+/* Adding Color */
+nav {
+	background-color: #222;
+	padding: 10px;
+}
+
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* styling the list */
+
+ul {
+	list-style-type: none;
+	text-align: center;
+	background-color: #222;
+	margin: 0;
+}
+
+li a {
+	
+	display: block;
+	text-decoration: none;
+	padding: 1em;
+	color: #c78c06;	
+}
+
+a:hover {
+	color: #222;
+	background-color: #c78c06;
+}
+
+
+/* Adding yeloww background to home button */
+
+.yellow-top a {
+	color: #222;
+	background-color: #c78c06;
+}
+
+.start-logo {
+	background-color: #c78c06;
+	padding-bottom: 30px;
+}
+
+/* Styling the search button */
+
+form.search-box input[type=text] {
+	
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid gray;
+	float: left;
+	width: 94%;
+	background: white;
+}
+
+form.search-box button {
+
+	float: left;
+	padding: 18px;
+	background: #222;
+	color: #c78c06;
+	font-size: 17px;
+	border: 1px solid #c78c06;
+	border-left: none; 
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+form.search-box::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Styling the Banner */
+
+/* Placing title on top of the banner image */
+
+.banner-box {
+	position: relative;
+}
+/* The backgroung goes directly in the text */
+
+.welcome-text {
+	position: absolute;
+	top: 5%;
+	background: rgb(34, 34, 34, 0.6);
+	color: white;
+	padding: 20px;
+	height: 75%;
+}
+
+
+.botton-connect {
+	position: absolute;
+	padding: 30px;
+	background: #c78c06;
+	color: #222;
+	border: 2px solid #c78c06;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+/* Styling the About Us section */
+
+
+#about-section {
+	background: #ffe6ac;
+	padding: 15px;
+}
+
+
+/* Our Services section */
+
+.services {
+	align-items: center;
+	padding: 20px;
+}
+
+.digital-box,.marketing-box, .video-box, .web-box, .print-box {
+	background: #ffe6ac;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.botton-arrow {
+	padding: 20px;
+	background: #222;
+	color: white;
+	border: 2px solid #222;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+main img {
+	width: 100%;
+	object-fit: cover;
+
+}
+
+
+/* Our Vision section */
+
+.vision {
+	position: relative;
+	height: auto;
+}
+
+.vision-text-section {
+	position: absolute;
+	height: 100%;
+	top: 5%;
+	color: white;
+	padding: 15px;
+}
+
+.vision-botton {
+	position: absolute;
+	padding: 30px;
+	background: black;
+	color: white;
+	border: 2px solid #c78c06;
+	margin-top: 10px;
+	font-size: 2rem;
+}
+
+.vision-image {
+	width: 100;
+}
+
+/* Our Team section */
+
+.grid-1-text, .grid-2-text {
+	background: #ffe6ac;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.our-team {
+	align-items: center;
+	padding: 20px;
 }
