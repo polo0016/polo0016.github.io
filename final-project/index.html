@@ -15,6 +15,7 @@
 
     <header>
         <!---Creating a conatiner for navegation-->
+
         <div class="menu">
 
             <nav class="menu-bar">
@@ -77,22 +78,22 @@
 
         <div id="about-section" class="wrapper about-us">
             <!---section for image -->
-            <section>
-                <img src="images/about-us.jpg" alt="tennis table" class="about-image">
-            </section>
-            <!---section for text -->
-            <div class="about-text-section">
-
-                <h2>About Us</h2>
-                <p>
+            <div class="about-us-grid">
+                <section>
+                 <img src="images/about-us.jpg" alt="tennis table" class="about-image">
+                </section>
+              <!---section for text -->
+                <div class="about-text-section">
+                 <h2>About Us</h2>
+                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
-                </p>
+                 </p>
 
-                <p>
+                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel accumsan urna. Vivamus hendrerit mollis tortor sed sagittis. Nunc ante nisi, eleifend ut ultrices at, lacinia at elit. Donec ut libero placerat, vehicula est in, eleifend ligula. Fusce molestie vitae nulla nec hendrerit. Cras finibus sapien sit amet quam semper convallis. Praesent laoreet augue ante.
-                </p>
-            </div>    
-
+                 </p>
+                </div>    
+            </div>
         </div>
 
         <!---Our Services section/ creating diferent div for each section to use grid on css-->
@@ -215,14 +216,16 @@
         <!---Our Team section-->
 
         <section class="our-team">
-            
-            <h2> Our Team</h2>
-            
+
+            <div class="team-title">
+                <h2> Our Team</h2>
+            </div>
+
             <!-- John Doe Section -->
 
             <div class="team-grid-1">
 
-                <img src="images/john.jpg" alt="Jhon Doe photo" class="grid-picture">
+                <img src="images/john.jpg" alt="Jhon Doe photo" class="team-picture">
               
                 <div class="grid-1-text">
 
@@ -232,6 +235,7 @@
 
                     <p class="our-team-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                        Nam eu massa sed tortor rhoncus egestas eget vel enim!
                     </p>
                 </div>
             </div>
@@ -240,7 +244,7 @@
 
             <div class="team-grid-2">
 
-                <img src="images/bob.jpg" alt="Bob Rite Photo" class="grid-picture">
+                <img src="images/bob.jpg" alt="Bob Rite Photo" class="team-picture">
               
                 <div class="grid-2-text">
 
@@ -258,7 +262,7 @@
         <!---Contact Us section-->
         <div id="contact-section" class="contact-us">
 
-            <h2> Contact Us</h2>
+            <h2 class="contact-title"> Contact Us</h2>
 
             <!---Creating grid for the send us form-->
             <div class="contact-form-grid">
@@ -283,16 +287,8 @@
                 
             </div>
 
-            <!---Creating grid for the location-->
 
-            <div class="location-grid">
-
-                <h3>Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641058634!2d-74.2478914182535!3d4.648283717813949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Bogota%2C%20Colombia!5e0!3m2!1sen!2sca!4v1648842162915!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-            </div>
-
-            <!---Creating grid for the hoursn-->
+            <!---Creating grid for the hours-->
 
             <div class="hours-grid">
 
@@ -312,6 +308,15 @@
                         <td>Closed</td>
                     </tr>
                 </table>
+        
+            </div>
+
+            <!---Creating grid for the location-->
+
+            <div class="location-grid">
+
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641058634!2d-74.2478914182535!3d4.648283717813949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Bogota%2C%20Colombia!5e0!3m2!1sen!2sca!4v1648842162915!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
             </div>
 

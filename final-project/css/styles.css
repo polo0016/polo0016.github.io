@@ -49,7 +49,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Mobile Style */
+/* ----------Mobile Style---------- */
 
 /* Font and sizes for the whole page*/
 
@@ -277,7 +277,7 @@ main img {
 }
 
 .vision-image {
-	width: 100;
+	width: 100%;
 }
 
 /* Our Team section */
@@ -291,4 +291,304 @@ main img {
 .our-team {
 	align-items: center;
 	padding: 20px;
+}
+
+/* Contact Us section */
+
+.contact-form-grid {
+	width: 85%;
+	padding: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 3px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+.sendbutton {
+	/*setting the font size of the button*/
+	font-size: 18px;
+	/*adding padding*/
+	padding: 4px;
+	/*setting the background colour*/
+	background: #222;
+	/*setting the colour of the text*/
+	color: #c78c06;
+	/*adding a black border*/
+	border: 2px solid #222;
+}
+
+/* Creating hours table */
+
+.hours-grid {
+	width: 100%;
+	margin-left: 15px;
+}
+table {
+	width: 85%;
+	align-items: center;
+	margin-left: 10px;
+}
+
+table,
+th,
+tr,
+td {
+	border: 1px solid #222;
+}
+
+th,
+td {
+	padding: 1em 0;
+}
+/* Adding color to days and hours */
+th {
+	background: #ffe6ac;
+	text-align: center;
+}
+
+td {
+	padding-left: 20px;
+}
+
+/* Location section */
+
+.location-grid {
+	width: 100%;
+	margin: 15px;
+}
+
+iframe {
+	width: 85%;
+}
+
+/* Adding color and bacground to footer */
+
+footer {
+	background: #222;
+	color: #c78c06;
+	line-height: 2;
+	padding: 20px;
+}
+
+/* ----------Desktop Style---------- */
+
+
+
+@media screen and (min-width:760px) {
+
+	/* Navegation */
+
+	
+	li a {
+		float: left;
+		text-decoration: none;
+		padding: 1em 2.5rem;
+		margin-top: 45px;
+	}
+	
+	form.search-box input[type=text] {
+		width: 15%;
+		margin-top: 50px;
+	}
+	form.search-box button {
+		margin-top: 50px;
+	}
+
+	.start-logo {
+		float: left;
+		background-color: #222;
+		padding: 20px 50px;
+		margin: 10px;
+	}
+    
+
+	/* Welcome banner */
+
+	.banner-box {
+		height: 510px;
+		background: none;
+	}
+
+
+	.main-banner {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		width: 100vw;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	.welcome-text {
+		position: absolute;
+		left: 8%;
+		right: 8%;
+		padding: 20px;
+	}
+
+	/* styling about us with grid */
+
+	.about-us-grid {
+        display: grid;
+		align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "one two";
+    }
+
+	.about-image{
+        width: 90%;
+        padding-left: 75px;
+		padding-top: 30px;
+    }
+
+	.about-text-section {
+      padding-left: 40px;
+	  padding-right: 50px;
+	}
+
+	.about-text-section p {
+		font-size: 1rem;	
+	}
+
+	/* styling our services with grid */
+
+	.services {
+		padding-left: 100px;
+		padding-right: 100px;
+		display: grid; 
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: (20px 50px 50px);
+		row-gap: 5px;
+		column-gap: 3px;
+		grid-template-areas: 
+		"one one one one one one"
+		"two two two three three three"
+		"four four five five six six"
+    }
+
+	.services .services-grid-title:nth-child(1) {
+		grid-area: one;
+	}
+
+	.services .services-grid-1:nth-child(2) {
+		grid-area: two;
+	}
+
+	.services .services-grid-2:nth-child(3) {
+		grid-area: three;
+	}
+
+	.services .services-grid-3:nth-child(4) {
+		grid-area: four;
+	}
+
+	.services .services-grid-4:nth-child(5) {
+		grid-area: five;
+	}
+
+	.services .services-grid-5:nth-child(6) {
+		grid-area: six;
+	}
+
+	.botton-arrow {
+		width: 100%;
+	}
+
+	/* Our vision section*/
+
+	.vision {
+		width: 100%;
+		height: 45px;
+	}
+
+	.vision-image {
+		width: 1200px;
+		height: 300px;
+		object-fit: cover;
+	}
+
+	.vision-text-section {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.vision-botton {
+		font-size: 1.2rem;
+	}
+
+	/* styling our services with flex */
+
+	.our-team {
+		width: auto;
+		padding-top: 250px;
+	}
+
+	.team-title {
+		padding-left: 50px;
+	}
+
+	.team-grid-1 {
+		display: flex;
+		margin: 0 60px 0 60px;
+		height: 400px;
+
+	}
+
+	.team-grid-2 {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 60px;
+		height: 400px;
+	}
+
+	.team-picture {
+		width: 50%;
+	}
+
+	/* styling contact us with grid */
+
+	.contact-us {
+		padding-left: 100px;
+		padding-right: 100px;
+		display: grid; 
+		align-content: center;
+        grid-template-columns: (40px 60px);
+        grid-template-rows: (20px 50px 50px);
+    }
+
+	.contact-us .contact-title:nth-child(1) {
+		grid-column-start: 1;
+		grid-column-end: 3;
+
+	}
+
+	.contact-us .contact-form-grid:nth-child(2) {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+
+	.contact-us .location-grid:nth-child(4) {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+	.contact-us .hours-grid:nth-child(3) {
+		grid-row-start: 3;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
 }
