@@ -169,7 +169,7 @@ form.search-box input[type=text] {
 form.search-box button {
 
 	float: left;
-	padding: 18px;
+	padding: 10px;
 	background: #222;
 	color: #c78c06;
 	font-size: 17px;
@@ -190,21 +190,21 @@ form.search-box::after {
 
 .banner-box {
 	position: relative;
+	background-image: url('../images/main-banner.jpg');
+	background-size: cover;
+	background-position: center center;
+	padding: 1rem;
 }
-/* The backgroung goes directly in the text */
 
 .welcome-text {
-	position: absolute;
-	top: 5%;
 	background: rgb(34, 34, 34, 0.6);
 	color: white;
 	padding: 20px;
-	height: 75%;
+	margin-bottom: 10px;
 }
 
 
 .botton-connect {
-	position: absolute;
 	padding: 30px;
 	background: #c78c06;
 	color: #222;
@@ -215,12 +215,10 @@ form.search-box::after {
 
 /* Styling the About Us section */
 
-
 #about-section {
 	background: #ffe6ac;
 	padding: 15px;
 }
-
 
 /* Our Services section */
 
@@ -236,7 +234,7 @@ form.search-box::after {
 }
 
 .botton-arrow {
-	padding: 20px;
+	padding: 10px;
 	background: #222;
 	color: white;
 	border: 2px solid #222;
@@ -247,7 +245,6 @@ form.search-box::after {
 main img {
 	width: 100%;
 	object-fit: cover;
-
 }
 
 
@@ -256,19 +253,19 @@ main img {
 .vision {
 	position: relative;
 	height: auto;
+	background-image: url('../images/vision.jpg');
+	background-size: cover;
+	background-position: center center;
 }
 
 .vision-text-section {
-	position: absolute;
-	height: 100%;
 	top: 5%;
 	color: white;
 	padding: 15px;
+	margin-left: 15px;
 }
 
 .vision-botton {
-	position: absolute;
-	padding: 30px;
 	background: black;
 	color: white;
 	border: 2px solid #c78c06;
@@ -285,7 +282,6 @@ main img {
 .grid-1-text, .grid-2-text {
 	background: #ffe6ac;
 	padding: 15px;
-	margin-bottom: 15px;
 }
 
 .our-team {
@@ -413,30 +409,12 @@ footer {
 
 	.banner-box {
 		height: 510px;
-		background: none;
 	}
 
-
-	.main-banner {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		left: 50%;
-		right: 50%;
-		margin-left: -50vw;
-		margin-right: -50vw;
-		width: 100vw;
-		z-index: -1;
-	}
 	h1 {
 		font-size: 4rem;
 	}
-	.welcome-text {
-		position: absolute;
-		left: 8%;
-		right: 8%;
-		padding: 20px;
-	}
+
 
 	/* styling about us with grid */
 
@@ -470,7 +448,6 @@ footer {
 		padding-right: 100px;
 		display: grid; 
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: (20px 50px 50px);
 		row-gap: 5px;
 		column-gap: 3px;
 		grid-template-areas: 
@@ -509,17 +486,6 @@ footer {
 
 	/* Our vision section*/
 
-	.vision {
-		width: 100%;
-		height: 45px;
-	}
-
-	.vision-image {
-		width: 1200px;
-		height: 300px;
-		object-fit: cover;
-	}
-
 	.vision-text-section {
 		padding-left: 100px;
 		padding-right: 100px;
@@ -533,7 +499,6 @@ footer {
 
 	.our-team {
 		width: auto;
-		padding-top: 250px;
 	}
 
 	.team-title {
@@ -544,7 +509,6 @@ footer {
 		display: flex;
 		margin: 0 60px 0 60px;
 		height: 400px;
-
 	}
 
 	.team-grid-2 {
@@ -564,15 +528,13 @@ footer {
 		padding-left: 100px;
 		padding-right: 100px;
 		display: grid; 
-		align-content: center;
-        grid-template-columns: (40px 60px);
-        grid-template-rows: (20px 50px 50px);
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: (20px 50px 50px); */
     }
 
 	.contact-us .contact-title:nth-child(1) {
 		grid-column-start: 1;
 		grid-column-end: 3;
-
 	}
 
 	.contact-us .contact-form-grid:nth-child(2) {
@@ -589,6 +551,18 @@ footer {
 		grid-row-start: 3;
 		grid-column-start: 1;
 		grid-column-end: 3;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	.location-grid {
+		width: 100%;
+	}
+
+	.contact-form-grid {
+		width: 90%;
 	}
 
 }
